@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lägg till bostad</title>
+</head>
+<body>
+  <header>
+    <div class="logo-small">
+      <a href="index.html">
+        <img src="logotyp.jpg.jpg" alt="Bostadssök" width="100">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Sök bostäder</a></li>
+        <li><a href="add-property.html">Lägg in bostad</a></li>
+        <li><a href="#">Kontakta oss</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="add-property">
+    <h2>Lägg till bostad</h2>
+    <form id="add-property-form">
+      <label for="title">Titel:</label>
+      <input type="text" id="title" name="title" required>
+      
+      <label for="price">Pris:</label>
+      <input type="number" id="price" name="price" required>
+      
+      <label for="location">Plats:</label>
+      <input type="text" id="location" name="location" required>
+      
+      <label for="rooms">Antal rum:</label>
+      <input type="number" id="rooms" name="rooms" required>
+      
+      <label for="area">Yta (m²):</label>
+      <input type="number" id="area" name="area" required>
+      
+      <label for="description">Beskrivning:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+      
+      <button type="submit" class="btn">Lägg till bostad</button>
+    </form>
+    
+    <a href="index.html">Tillbaka till hemsidan</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Bostadssök AB. Alla rättigheter förbehållna.</p>
+  </footer>
+  
+  <script src="add-property.js"></script>
+</body>
+</html>

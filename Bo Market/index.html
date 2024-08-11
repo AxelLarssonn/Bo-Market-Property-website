@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="leaflet.css">
+  <style>
+    #mapid { height: 400px; }
+    body { background-color: #b2b2b2; } /* Ljusgrå bakgrundsfärg */
+  </style>
+  <title>Bostadssök</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logotyp.jpg.jpg" alt="Bostadssök">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Sök bostäder</a></li>
+        <li><a href="add-property.html">Lägg in bostad</a></li>
+        <li><a href="#">Kontakta oss</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="mapid"></div>
+  <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65094.06765975271!2d18.016993894305685!3d59.346482611893386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f82ad44e11ce9%3A0xd452cbb9e7c31242!2s%C3%96stermalm%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1714404911698!5m2!1ssv!2sse" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+  <section class="property-list">
+    <div class="property-card">
+      <a href="property-details.html?id=1">
+        <img src="Sthlm.jpg.jpg" alt="Vacker villa vid sjön">
+        <h3>Vacker villa vid sjön</h3>
+        <p>Plats: Stockholm</p>
+        <p>Pris: 500 000 kr</p>
+      </a>
+    </div>
+    <div class="property-card">
+      <a href="property-details.html?id=2">
+        <img src="Göteborg.jpg.jpg" alt="Lägenhet med panoramautsikt">
+        <h3>Lägenhet med panoramautsikt</h3>
+        <p>Plats: Göteborg</p>
+        <p>Pris: 300 000 kr</p>
+      </a>
+    </div>
+    <!-- Lägg till fler bostäder här vid behov -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Bostadssök AB. Alla rättigheter förbehållna.</p>
+  </footer>
+  
+  <script src="leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

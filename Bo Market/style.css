@@ -1,0 +1,149 @@
+/* Återställning av standardmarginaler och fyllning */
+body, h1, h2, h3, p, ul, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Grundstilar för bodyn */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Stilar för headern */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Stilar för navigationsmenyn */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Stilar för logotypen */
+.logo img {
+  max-height: 50px; /* Ändra denna höjd för att justera storleken på logotypen */
+  max-width: auto; /* Använd auto för att behålla bildens proportioner */
+}
+
+/* Stilar för söksektionen */
+.search {
+  padding: 20px;
+  text-align: center;
+}
+
+.search h2 {
+  margin-bottom: 10px;
+}
+
+.search form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input[type="text"],
+.search input[type="number"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Stilar för listan med bostäder */
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.property-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Stilar för sektionen för att lägga till bostad */
+.add-property {
+  padding: 20px;
+  text-align: center;
+}
+
+.add-property form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-property label {
+  margin-bottom: 5px;
+}
+
+.add-property input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-property button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Stilar för footern */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Stilar för registreringsformulär */
+form {
+  margin: 20px auto;
+  width: 300px;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
